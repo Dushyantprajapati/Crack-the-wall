@@ -34,7 +34,7 @@ function setup() {
   car4.velocityX=p;
 
 
-  wall.shapeColor = color ("black");
+  wall.shapeColor = color ("white");
 }
 
 function draw() {
@@ -56,52 +56,52 @@ if(wall.x-car.x>(car.width+wall.width)/2){
   car.velocityX=0;
   var deformation=0.5 * weight * speed * speed/56342;
   if(deformation>180){
-car.shapeColor=color("green");
+wall.shapeColor=color("green");
   }
   if(deformation<180 && deformation>100){
-  car.shapeColor=color("red");
+  wall.shapeColor=color("red");
   }
 if(deformation<100){
-  car.shapeColor=color("blue");
+  wall.shapeColor=color("blue");
 }
 }
 if(wall.x-car2.x>(car2.width+wall.width)/2){
   car2.velocityX=0;
   var deformation=0.5 * weight * speed * speed/623832;
   if(deformation>180){
-car2.shapeColor=color("blue");
+wall.shapeColor=color("blue");
   }
   if(deformation<180 && deformation>100){
-  car2.shapeColor=color("yellow");
+  wall.shapeColor=color("yellow");
   }
 if(deformation<100){
-  car2.shapeColor=color("red");
+  wall.shapeColor=color("red");
 }
 }
 if(wall.x-car3.x>(car3.width+wall.width)/2){
   car3.velocityX=0;
   var deformation=0.5 * weight * speed * speed/23455;
   if(deformation>180){
-car3.shapeColor=color("red");
+wall.shapeColor=color("red");
   }
   if(deformation<180 && deformation>100){
-  car3.shapeColor=color("blue");
+  wall.shapeColor=color("blue");
   }
 if(deformation<100){
-  car3.shapeColor=color("yellow");
+  wall.shapeColor=color("yellow");
 }
 }
 if(wall.x-car4.x>(car4.width+wall.width)/2){
   car4.velocityX=0;
   var deformation=0.5 * weight * speed * speed/664252;
   if(deformation>180){
-car4.shapeColor=color("yellow");
+wall.shapeColor=color("yellow");
   }
   if(deformation<180 && deformation>100){
-  car4.shapeColor=color("red");
+  wall.shapeColor=color("red");
   }
 if(deformation<100){
-  car4.shapeColor=color("blue");
+  wall.shapeColor=color("blue");
 }
 }
   drawSprites();
